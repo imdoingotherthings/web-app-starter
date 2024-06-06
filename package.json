@@ -1,0 +1,33 @@
+{
+	"name": "template",
+	"version": "1.0.0",
+	"description": "A template to easily get started building a web app using React, Node, Express, Postgres and Parcel.",
+	"author": "Asai Andrade",
+	"type": "module",
+	"license": "MIT",
+	"scripts": {
+		"start": "node app/index.js",
+		"dev": "nodemon app/index.js",
+		"parcel": "parcel src/index.html --no-cache",
+		"build": "parcel build src/index.html",
+		"preload": "node utils/preload.js",
+		"fe": "yarn build && yarn parcel",
+		"remake": "rm -rf dist/ .parcel-cache/ node_modules/ yarn.lock yarn-lock.error package-lock.json && clear && yarn"
+	},
+	"dependencies": {
+		"dotenv": "^16.4.5",
+		"express": "^4.19.2",
+		"nodemon": "^3.1.0",
+		"parcel": "^2.12.0",
+		"pg": "^8.11.3",
+		"react": "^18.2.0",
+		"react-dom": "^18.2.0",
+		"react-router": "^6.22.3"
+	},
+	"devDependencies": {
+		"autoprefixer": "^10.4.19",
+		"postcss": "^8.4.38",
+		"process": "^0.11.10",
+		"tailwindcss": "^3.4.1"
+	}
+}

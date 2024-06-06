@@ -1,0 +1,7 @@
+node_modules/
+.parcel-cache
+.DS_Store
+yarn-error.log
+.env
+dist/
+package-lock.json
